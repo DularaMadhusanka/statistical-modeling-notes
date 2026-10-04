@@ -1,3 +1,5 @@
+#One-sample and independent two-sample t-tests
+
 method_A <- c(42, 39, 45, 41, 38, 44, 40, 43)
 method_B <- c(47, 46, 43, 49, 45, 48, 44, 46)
 
