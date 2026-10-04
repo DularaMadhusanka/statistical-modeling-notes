@@ -1,3 +1,5 @@
+#Factors, dummy variables and prediction
+
 data(mtcars)
 
 mtcars$am <- factor(mtcars$am, levels = c(0,1), labels = c("Auto","Manual"))
