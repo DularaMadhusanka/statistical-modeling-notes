@@ -1,3 +1,5 @@
+#Simple and multiple linear regression
+
 library(MASS)
 data("Boston")
 str(Boston)
