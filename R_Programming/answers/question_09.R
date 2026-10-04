@@ -1,3 +1,5 @@
+#Checking multiple-regression assumptions
+
 library(MASS)
 data("Boston")
 
