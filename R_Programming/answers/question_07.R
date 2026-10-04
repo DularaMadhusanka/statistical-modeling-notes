@@ -1,3 +1,5 @@
+#Train–test evaluation of a regression model
+
 #(a) set the seed to 123 and randomly assign 80% of rows to training data;
 
 set.seed(123)
