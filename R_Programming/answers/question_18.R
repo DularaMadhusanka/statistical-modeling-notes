@@ -1,3 +1,5 @@
+#Multinomial logistic regression
+
 set.seed(123)
 
 data(iris)
@@ -11,10 +13,14 @@ train_index <- sample(1:n, size = n_train, replace = FALSE)
 train_data <- iris[train_index, ]
 test_data  <- iris[-train_index, ]
 
+#(b) fit a multinomial logistic model predicting Species from all measurements;
+
 library(nnet)
 
 model_multi <- multinom(Species ~ ., data = train_data)
 summary(model_multi)
+
+#(c) display the model coefficients and identify the reference response category used by R;
 
 levels(iris$Species)
 
