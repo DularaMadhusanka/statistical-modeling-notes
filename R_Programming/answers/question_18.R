@@ -26,6 +26,8 @@ levels(iris$Species)
 
 coef(model_multi)
 
+#(d) predict the test classes, form the confusion matrix and calculate accuracy;
+
 test_predctions <- predict(model_multi, newdata = test_data)
 
 conf_matrix <- table(Predicted = test_predctions,
@@ -34,6 +36,8 @@ conf_matrix
 
 accuracy <- sum(diag(conf_matrix))/sum(conf_matrix)
 accuracy
+
+#(e) predict the class of the new flower
 
 new_flower <- data.frame(
   Sepal.Length = 5.1,
