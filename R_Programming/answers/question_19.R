@@ -18,6 +18,7 @@ model_ord <- polr(Sat ~ Infl + Type + Cont,
                   weights = Freq,
                   Hess = TRUE)
 
+#(c) display the model summary and confidence intervals;
 summary(model_ord)
 
 summary(housing)
